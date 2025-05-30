@@ -36,31 +36,33 @@ print(maxi)
 # 9
 
 # 3)simulate a basic login system (max attempts 3)Input=['kumar','202','84558906' ]
-inp = ['kumar', '202', '84558906']
-for i in range(1, 4):
-    value = input("Enter Your Password: ")
-    if value in inp:
-        print("Login successful:", inp)
+i=1
+inp=['kumar','202','84558906']
+while i<=3:
+    pas=input("Enter Your Password : ")
+    if pas in inp:
+        print(inp)
         break
-    elif i == 3:
-        inp.clear()
-        print("Login failed 3 times. Your data is deleted:", inp)
     else:
-        print("Incorrect password. Try again.")
-
+       if i==3:
+            inp.clear()
+            print("You Your data is deleted",inp)
+       else:
+           print("wrong password ,Try Again")
+    i+=1
 
 # Output:
-# # 1)
-# Enter Your Password: ajaz
-# Incorrect password. Try again.
-# Enter Your Password: 1651553
-# Incorrect password. Try again.
-# Enter Your Password: 203
-# Login failed 3 times. Your data is deleted: []
-
-# 2)Enter Your Password: 20
-# Incorrect password. Try again.
-# Enter Your Password: ajay
-# Incorrect password. Try again.
-# Enter Your Password: 202
-# Login successful: ['kumar', '202', '84558906']
+# 1)
+# Enter Your Password : 2
+# wrong password ,Try Again
+# Enter Your Password : ajaz
+# wrong password ,Try Again
+# Enter Your Password : 316861
+# You Your data is deleted []
+# 2)
+# Enter Your Password : 203
+# wrong password ,Try Again
+# Enter Your Password : ajaz
+# wrong password ,Try Again
+# Enter Your Password : 202
+# ['kumar', '202', '84558906']
