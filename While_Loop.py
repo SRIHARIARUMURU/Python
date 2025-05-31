@@ -69,6 +69,20 @@ if temp==rev:
 else:
     print(f"{rev} is Not a Palindrome")
   #-------------------------------------------------------------------------
+#8.Count the number of digits in a given number using a while loop.
+n=int(input())
+count=0
+while n>0:
+    digit=n%10
+    n//=10
+    count+=1
+print(count)
+
+# Output:
+# 6301716763
+# 10
+
+  #-------------------------------------------------------------------------
   #9. Keep asking the user for input until they enter "exit".Hint: Use while True: and break.
 while True:
     print("To stop the loop enter 'exit'")
@@ -90,3 +104,31 @@ while True:
 # To stop the loop enter 'exit'
 # exit
 #-------------------------------------------------------------------------
+#10. Create a number guessing game using a while loop Keep looping until the user guesses the correct number.Provide hints like "Too High" or "Too Low".
+num=503
+inp=int(input())
+while inp!=503:
+    if inp>num:
+        print("Too High")
+        inp=int(input())
+    elif inp<num:
+        print("Too Low")
+        inp=int(input())
+    else:
+        print("Eter Valid value")
+print("You Won!")
+
+# Outpt:
+# 2
+# Too Low
+# 2
+# Too Low
+# 23
+# Too Low
+# 3
+# Too Low
+# 205
+# Too Low
+# 502
+# Too Low
+
