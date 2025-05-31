@@ -1,7 +1,9 @@
 # 1)Display count down timer from 10 to 0 using while loop?
+import time
 i=10
 while i>=0:
     print(i)
+    time.sleep(1)
     i-=1
 print("timmer complete")
 
