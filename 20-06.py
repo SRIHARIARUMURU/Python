@@ -14,8 +14,9 @@ print(mx_len(m))
 # 2. Given a list and a target number, return all pairs that sum to the target.
 l=[1,2,3,6,2,2,4,3,4,7,8,3,0]
 def target_sum(l):
+    n=7
     for i in range (len(l)-1):
-        if l[i]+l[i+1]==7:  
+        if l[i]+l[i+1]==n:  
            print(l[i],l[i+1])
 target_sum(l)
 
