@@ -38,6 +38,8 @@ print([ i  for i in s  if i not in "AEIOUaeiou"])
 # Output:
 # ['s', 'r', 'h', 'r']
 
+# 5.From a given list of words, extract only those that start with a vowel (a, e, i, o, u).
+# Example: words = ["functions", "loops", "oops", "exception", "as"]
 w = ["functions", "loops", "oops", "exception", "as"]
 print([i for i in w  for j in "AEIOUaeiou"  if i.startswith(j)])
 
