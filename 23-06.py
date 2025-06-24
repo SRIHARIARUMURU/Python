@@ -2,11 +2,11 @@
 # Output: 10 500 rupees notes and 1 200rupees notes
 n = 5200
 m=n//500
-x=(n-m)//200
+x=(n%500)//200
 print(f"{m} 500 rupees notes and {x} 200 rupees notes")
 
 # Output:
-# 10 500 rupees notes and 25 200 rupees notes
+# 10 500 rupees notes and 1 200 rupees notes
 
 # 2.Write a Python program to keep asking the user to enter a password until they enter the correct
 password="Abc123"
